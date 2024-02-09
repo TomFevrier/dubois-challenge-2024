@@ -5,7 +5,7 @@ Mes contributions au [Du Bois Visualization Challenge 2024](https://github.com/a
 Chaque graphique a été recréé en version interactive, à l’aide de [Svelte](https://svelte.dev/) et [D3](https://d3js.org/).
 
 ## Liste des challenges
-- Semaine 1 : [Population noire en Géorgie par comtés]()
+- Semaine 1 : [Population noire en Géorgie par comtés](https://tomfevrier.github.io/dubois-challenge-2024/challenge01)
 
 ## Développement
 

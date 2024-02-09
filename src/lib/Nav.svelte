@@ -8,13 +8,13 @@
 <nav>
 	<ul>
 		<li class:hidden={!prev}>
-			<a href='{base}/{prev}'>
+			<a href='{base}{prev}'>
 				↫
 			</a>
 		</li>
 		<li>❋</li>
 		<li class:hidden={!next}>
-			<a href='{base}/{next}'>
+			<a href='{base}{next}'>
 				↬
 			</a>
 		</li>

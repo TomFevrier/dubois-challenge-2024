@@ -20,13 +20,13 @@
 	});
 
 	const categories = [
-		{ id: 'inf1000', label: 'Moins de 1000' },
-		{ id: 'from1000to2500', label: '1000 à 2500' },
-		{ id: 'from2500to5000', label: '2500 à 5000' },
-		{ id: 'from5000to10000', label: '5000 à 10 000' },
-		{ id: 'from10000to15000', label: '10 000 à 15 000' },
+		{ id: 'from20000to30000', label: '20 000 à 30 000' },
 		{ id: 'from15000to20000', label: '15 000 à 20 000' },
-		{ id: 'from20000to30000', label: '20 000 à 30 000' }
+		{ id: 'from10000to15000', label: '10 000 à 15 000' },
+		{ id: 'from5000to10000', label: '5000 à 10 000' },
+		{ id: 'from2500to5000', label: '2500 à 5000' },
+		{ id: 'from1000to2500', label: '1000 à 2500' },
+		{ id: 'inf1000', label: 'Moins de 1000' }
 	];
 </script>
 
