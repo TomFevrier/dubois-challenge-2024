@@ -1,0 +1,96 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600&display=swap');
+
+/* @font-face {
+	font-family: 'DuBois';
+	src: url('/fonts/VTCDuBoisTrial-Bold.woff2') format('woff2'),
+		url('/fonts/VTCDuBoisTrial-Bold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DuBois';
+	src: url('/fonts/VTCDuBoisTrial-Light.woff2') format('woff2'),
+		url('/fonts/VTCDuBoisTrial-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+} */
+
+@font-face {
+	font-family: 'B52-ULC';
+	src: url('fonts/B52-ULCW00-ULC.woff2') format('woff2'),
+		url('fonts/B52-ULCW00-ULC.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Vasarely';
+	src: url('fonts/Vasarely-Regular.woff2') format('woff2'),
+		url('fonts/Vasarely-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Vasarely';
+	src: url('fonts/Vasarely-Light.woff2') format('woff2'),
+		url('fonts/Vasarely-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+	position: relative;
+	width: 100%;
+}
+
+html {
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	font-family: 'Vasarely', sans-serif;
+	text-transform: uppercase;
+	background-color: antiquewhite;
+}
+
+#sveltekit {
+	position: relative;
+	min-height: 100dvh;
+	min-height: 100vh;
+	min-height: -webkit-fill-available;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+	margin: 0;
+}
+
+input {
+	all: unset;
+	box-sizing: border-box;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+	box-sizing: border-box;
+	user-select: none;
+}
