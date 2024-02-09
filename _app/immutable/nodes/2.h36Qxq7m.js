@@ -1,0 +1,1 @@
+import{R as t}from"../chunks/control.pJ1mnnAb.js";import{b as r}from"../chunks/paths.ZvsqeHKu.js";function n(e,o){throw new t(e,o.toString())}new TextEncoder;function a(){n(303,`${r}/challenge01`)}const l=Object.freeze(Object.defineProperty({__proto__:null,load:a},Symbol.toStringTag,{value:"Module"}));export{l as universal};
