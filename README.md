@@ -6,6 +6,7 @@ Chaque graphique a été recréé en version interactive, à l’aide de [Svelte
 
 ## Liste des challenges
 - Semaine 1 : [Population noire en Géorgie par comtés](https://tomfevrier.github.io/dubois-challenge-2024/challenge01)
+- Semaine 2 : [Esclaves et Noirs libres](https://tomfevrier.github.io/dubois-challenge-2024/challenge02)
 
 ## Développement
 

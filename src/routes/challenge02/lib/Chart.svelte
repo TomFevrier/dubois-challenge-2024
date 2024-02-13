@@ -50,7 +50,6 @@
 </script>
 
 <div class='chart' bind:clientWidth={width}>
-	<!-- Bouton pour passer de l'un à l'autre, façon toggle -->
 	<Switch bind:checked={isZoomed} label='Zoomer' />
 	{#if width}
 		<svg {width} {height}>
@@ -68,12 +67,6 @@
 						}),
 						'Z'
 					].join(' ')} />
-					<!-- <rect
-						x={padding.left}
-						y={padding.top}
-						width={width - padding.left - padding.right}
-						height={height - padding.top - padding.bottom}
-						fill='white' /> -->
 				</mask>
 			</defs>
 			<g class='areas' mask='url(#graph)'>
