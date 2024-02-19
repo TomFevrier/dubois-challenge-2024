@@ -12,4 +12,4 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
 src/routes/challenge04/
-src/static/data/challenge04/
+static/data/challenge04/
