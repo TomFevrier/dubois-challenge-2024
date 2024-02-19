@@ -113,7 +113,7 @@
 		}
 
 		:global(h4) {
-			font: bold 1rem 'B52-ULC', serif;
+			font: 1rem 'Vasarely', sans-serif;
 			margin: 0;
 			line-height: 110%;
 		}

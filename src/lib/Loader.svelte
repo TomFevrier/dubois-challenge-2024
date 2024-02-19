@@ -41,27 +41,35 @@
 	];
 </script>
 
-<svg class='loader' viewBox='0 0 100 100'>
-	<g class='spirals' transform='translate(50, 50)'>
-		{#each data as d, i}
-			<Spiral
-				index={i}
-				startRadius={45 - i * 2}
-				endRadius={15 - i * 2}
-				color={d.color}
-				dasharray={d.dasharray} />
-		{/each}
-	</g>
-</svg>
+<div class='loader-bg'>
+	<svg class='loader' viewBox='0 0 100 100'>
+		<g class='spirals' transform='translate(50, 50)'>
+			{#each data as d, i}
+				<Spiral
+					index={i}
+					startRadius={45 - i * 2}
+					endRadius={15 - i * 2}
+					color={d.color}
+					dasharray={d.dasharray} />
+			{/each}
+		</g>
+	</svg>
+</div>
 
 <style lang='scss'>
-	.loader {
+	.loader-bg {
 		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 16rem;
-		height: 16rem;
+		inset: 0;
+		background-color: antiquewhite;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 101;
 
+		.loader {
+			width: 16rem;
+			height: 16rem;
+
+		}
 	}
 </style>

@@ -12,7 +12,7 @@
 		width: 100%;
 		max-width: 72rem;
 		overflow: hidden;
-		padding: 2rem;
+		padding: 2rem 0.5rem;
 		margin: 0 auto;
 		
 		display: flex;

@@ -4,6 +4,7 @@
 	import { json } from 'd3-fetch';
 	
 	import { Loader, ChartHeader, ChartFooter, Nav } from '$lib';
+	import balanceText from '$lib/balance-text';
 	import { Map } from './lib';
 
 	let isLoaded = false;
@@ -35,9 +36,10 @@
 </svelte:head>
 {#if !isLoaded}
 	<Loader />
-{:else}
+{/if}
+{#if counties}
 	<ChartHeader>
-		Population noire en Géorgie par comtés
+		Population noire en Géorgie par comtés
 	</ChartHeader>
 	<div class='legend'>
 		{#each categories as category}

@@ -15,9 +15,9 @@ export const findPolylabel = (feature) => {
 
 export const { format } = formatLocale({
 	decimal: ',',
-	thousands: '.',
+	thousands: ' ',
 	grouping: [3],
-	currency: ['', '&nbsp;€'],
-	percent: '&nbsp;%',
+	currency: ['', ' €'],
+	percent: ' %',
 	nan: 'N/A'
 });

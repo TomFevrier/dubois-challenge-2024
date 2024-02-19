@@ -1,8 +1,7 @@
 <script>
 	import { geoPath, geoMercator } from 'd3-geo';
 
-	import Tooltip from './Tooltip.svelte';
-
+	import { Tooltip } from '$lib';
 	import { findPolylabel } from '$lib/utils';
 
 	export let key;
@@ -31,6 +30,7 @@
 				{#each counties.features as f}
 					<path
 						class='county {f.properties[key]}'
+						role='img'
 						d={path(f)}
 						on:mouseenter={() => {
 							hovered = {

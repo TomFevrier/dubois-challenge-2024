@@ -13,7 +13,7 @@
 	let data;
 
 	onMount(async () => {
-		data = await csv('data/challenge02/data.csv', autoType);
+		data = await csv('data/challenge03/data.csv', autoType);
 
 		await tick();
 		balanceText();
@@ -23,24 +23,24 @@
 </script>
 
 <svelte:head>
-	<title>Du Bois Challenge 2024 | Semaine 2</title>
+	<title>Du Bois Challenge 2024 | Semaine 3</title>
 </svelte:head>
 {#if !isLoaded}
 	<Loader />
 {/if}
 {#if data}
 	<ChartHeader>
-		Esclaves et Noirs libres
+		Hectares de terrain appartenant à des Noirs en Géorgie
 	</ChartHeader>
 	<Chart {data} />
 	<ChartFooter>
 		<a
-			href='https://raw.githubusercontent.com/ajstarks/dubois-data-portraits/master/challenge/2024/challenge02/original-plate-12.jpg'
+			href='https://raw.githubusercontent.com/ajstarks/dubois-data-portraits/master/challenge/2024/challenge03/original-plate-19.jpg'
 			target='_blank'
 			slot='week'
 		>
-			Semaine 2
+			Semaine 3
 		</a>
-		<Nav prev='/challenge01' next='/challenge03' />
+		<Nav prev='/challenge02' />
 	</ChartFooter>
 {/if}

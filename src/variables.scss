@@ -13,6 +13,14 @@ $purple: #7E6583;
 
 /* MIXINS FOR RESPONSIVENESS */
 
+$screen-xs: 24rem; // 384px
+
+@mixin xs {
+   @media (max-width: #{$screen-xs}) {
+	   @content;
+   }
+}
+
 $screen-sm: 32rem; // 512px
 
 @mixin sm {
