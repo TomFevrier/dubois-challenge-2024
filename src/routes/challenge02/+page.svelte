@@ -1,11 +1,10 @@
 <script>
-	import { onMount, tick } from 'svelte';
+	import { onMount } from 'svelte';
 
 	import { csv } from 'd3-fetch';
 	import { autoType } from 'd3-dsv';
 	
 	import { Loader, ChartHeader, ChartFooter, Nav } from '$lib';
-	import balanceText from '$lib/balance-text';
 	import { Chart } from './lib';
 
 	let isLoaded = false;
@@ -14,9 +13,6 @@
 
 	onMount(async () => {
 		data = await csv('data/challenge02/data.csv', autoType);
-
-		await tick();
-		balanceText();
 
 		setTimeout(() => isLoaded = true, 500);
 	});

@@ -11,5 +11,5 @@ node_modules
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
-src/routes/challenge04/
-static/data/challenge04/
+src/routes/challenge06/
+static/data/challenge06/

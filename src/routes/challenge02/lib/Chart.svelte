@@ -30,7 +30,7 @@
 	});
 
 	const stackedData = stack()
-		.keys(['Free', 'Slave'])
+		.keys(['free', 'slave'])
 		(data);
 
 	$: xScale = scaleLinear()
@@ -38,11 +38,11 @@
 		.range([padding.left, width - padding.right]);
 
 	$: yScale = scaleLinear()
-		.domain(extent(data, (d) => d.Year))
+		.domain(extent(data, (d) => d.year))
 		.range([padding.top, height - padding.bottom]);
 
 	$: areaGenerator = area()
-		.y((d) => yScale(d.data.Year))
+		.y((d) => yScale(d.data.year))
 		.x0((d) => xScale(d[0]))
 		.x1((d) => xScale(d[1]));
 
@@ -94,15 +94,15 @@
 				<g class='ticks'>
 					{#each data as d}
 						<g class='tick'>
-							<text x={20} y={yScale(d.Year)}>
-								{d.Year}
+							<text x={20} y={yScale(d.year)}>
+								{d.year}
 							</text>
 							<line
 								class='grid-line'
 								x1={padding.left}
 								x2={width - padding.right}
-								y1={yScale(d.Year)}
-								y2={yScale(d.Year)} />
+								y1={yScale(d.year)}
+								y2={yScale(d.year)} />
 						</g>
 					{/each}
 				</g>
@@ -110,8 +110,8 @@
 			<g class='values'>
 				{#each data as d, i}
 					<g class='value'>
-						<text x={width - padding.right * 0.5} y={yScale(d.Year)}>
-							{format('.1~f')(d.Free)}
+						<text x={width - padding.right * 0.5} y={yScale(d.year)}>
+							{format('.1~f')(d.free)}
 							{#if i === 0 || i === data.length - 1}
 								&nbsp;%
 							{/if}

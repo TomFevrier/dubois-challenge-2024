@@ -1,5 +1,6 @@
 const relayout = (wrapper, ratio = 1) => {
 	const container = wrapper.parentElement;
+	if (!container) return;
 
 	const update = (width) => (wrapper.style.maxWidth = width + 'px');
 
@@ -36,23 +37,17 @@ const relayout = (wrapper, ratio = 1) => {
 	}
 }
 
-export default () => {
+export const balancer = (node) => {
 	if (!window.CSS.supports('text-wrap', 'balance')) {
-		const elements = document.querySelectorAll('.balance-text, h1');
 		const resizeObserver = new ResizeObserver((entries) => {
 			entries.forEach((entry) => {
 				relayout(entry.target);
 			});
 		});
-		elements.forEach((element) => {
-			relayout(element);
-			resizeObserver.observe(element);
-		});
+		relayout(node);
+		resizeObserver.observe(node);
 		window.addEventListener('resize', () => {
-			elements.forEach((element) => {
-				relayout(element);
-			});
+			relayout(node);
 		});
 	}
 }
-

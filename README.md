@@ -8,6 +8,8 @@ Chaque graphique a été recréé en version interactive, à l’aide de [Svelte
 - Semaine 1 : [Population noire en Géorgie par comtés](https://tomfevrier.github.io/dubois-challenge-2024/challenge01)
 - Semaine 2 : [Esclaves et Noirs libres](https://tomfevrier.github.io/dubois-challenge-2024/challenge02)
 - Semaine 3 : [Hectares de terrain appartenant à des Noirs en Géorgie](https://tomfevrier.github.io/dubois-challenge-2024/challenge03)
+- Semaine 4 : [Routes de la traite des esclaves africains](https://tomfevrier.github.io/dubois-challenge-2024/challenge04)
+- Semaine 5 : [Métissage en Géorgie](https://tomfevrier.github.io/dubois-challenge-2024/challenge05)
 
 ## Développement
 

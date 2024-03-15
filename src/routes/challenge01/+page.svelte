@@ -4,7 +4,6 @@
 	import { json } from 'd3-fetch';
 	
 	import { Loader, ChartHeader, ChartFooter, Nav } from '$lib';
-	import balanceText from '$lib/balance-text';
 	import { Map } from './lib';
 
 	let isLoaded = false;
@@ -13,9 +12,6 @@
 
 	onMount(async () => {
 		counties = await json('data/challenge01/counties.geojson');
-
-		await tick();
-		balanceText();
 
 		setTimeout(() => isLoaded = true, 500);
 	});
