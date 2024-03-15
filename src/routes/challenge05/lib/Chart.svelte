@@ -7,7 +7,7 @@
 	export let data;
 
 	let width;
-	$: height = width * 2.8;
+	$: height = width * 2.5;
 
 	const stackedData = data.map((d, i, array) => ({
 		...d,
@@ -105,7 +105,7 @@
 		}
 
 		.chart {
-			width: 50%;
+			width: 45%;
 			max-width: 16rem;
 
 			.bar {
